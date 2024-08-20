@@ -11,8 +11,9 @@ const menu ={
     
 // }
 for  (let key in menu){
-    const value = menu [key];
-    console.log(`The price of ${key} is ${value+2}`);
+    const price = menu [key];
+    const tax =Number(price.slice(1))+1;
+    console.log(`The price of ${key} is $${tax}`);
     
 
 }
