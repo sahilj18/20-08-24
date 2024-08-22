@@ -10,8 +10,10 @@
 // move1("f")
 function move(char ,step){
    const alphabet= "abcdefghijklmnopqrstuvwxyz";
+
    const indexChar = alphabet.indexOf(char);
    let finalIndex= indexChar+ step;
+   
    if (finalIndex >25){
     finalIndex =finalIndex%26;
    }
